@@ -10,4 +10,4 @@ def test_1():
 
 def test_must_fail():
     resp: Response = client.get('/na')
-    assert resp.status_code == 404
+    assert resp.status_code == 403
