@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "github-actions-sandbox"
+version = "0.1.0"
+description = "Testbed for ci workflow"
+authors = ["Thomas Kleinöder <dev@time4oss.de>"]
+packages = [{include = "ci_sample"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.2"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+httpx = "^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
