@@ -8,6 +8,7 @@ def test_1():
     resp: Response = client.get('/ping')
     assert resp.status_code == 200
 
+# dummy comment
 def test_must_fail():
     resp: Response = client.get('/na')
     assert resp.status_code == 404
